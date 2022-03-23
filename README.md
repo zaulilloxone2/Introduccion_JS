@@ -25,7 +25,11 @@ Proyecto funcionado en heroku o en algún otra plataforma
 https://www.youtube.com/watch?v=_ktnU8VbixM
 https://github.com/doapps/software/wiki/C%C3%B3mo-desplegar-un-sitio-web-est%C3%A1tico-en-Heroku
 ### Resultados:
-
+![image](https://github.com/zaulilloxone2/Introduccion_JS/blob/98d67d5b35eb2419fbeb8a27e864a27bd37dc0ba/1.png)
+![image](https://github.com/zaulilloxone2/Introduccion_JS/blob/98d67d5b35eb2419fbeb8a27e864a27bd37dc0ba/2.png)
+![image](https://github.com/zaulilloxone2/Introduccion_JS/blob/98d67d5b35eb2419fbeb8a27e864a27bd37dc0ba/3.png)
+![image](https://github.com/zaulilloxone2/Introduccion_JS/blob/98d67d5b35eb2419fbeb8a27e864a27bd37dc0ba/4.png)
+![image](https://github.com/zaulilloxone2/Introduccion_JS/blob/98d67d5b35eb2419fbeb8a27e864a27bd37dc0ba/5.png)
 
 ### Conclusiones:
 El framework de Tree se me hizo realmente fácil de entender, hubo algunas ocasiones en donde no se mostraba nada y es más dificil de saber en donde está el problema, despues de checar las delcaraciones ya todo salía a la luz.
