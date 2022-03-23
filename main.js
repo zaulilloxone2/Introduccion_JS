@@ -45,6 +45,18 @@ const renderer=new THREE.WebGLRenderer({
   }
 
   Array(200).fill().forEach(addStar)
+
+  const spaceTexture=new THREE.TextureLoader().load('space.jpg');
+  scene.background=spaceTexture;
+
+  const cajita = new THREE.TextureLoader().load('zaul.jpg');
+  const zaul = new THREE.Mesh(
+    new THREE.BoxGeometry(3,3,3),
+    new THREE.MeshBasicMaterial({map: cajita})
+  );
+
+  scene.add(zaul);
+
   function animate(){
     requestAnimationFrame(animate);
 
