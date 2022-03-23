@@ -67,30 +67,44 @@ scene.background = spaceTexture;
 
 const jeffTexture = new THREE.TextureLoader().load('zaul.jpg');
 
-const jeff = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: jeffTexture }));
+const zaul = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: jeffTexture }));
 
-scene.add(jeff);
+scene.add(zaul);
 
-// Moon
+// Neptuno
 
 const moonTexture = new THREE.TextureLoader().load('neptune.jpg');
 const normalTexture = new THREE.TextureLoader().load('normal.jpg');
 
 const moon = new THREE.Mesh(
-  new THREE.SphereGeometry(3, 32, 32),
+  new THREE.SphereGeometry(8, 32, 32),
   new THREE.MeshStandardMaterial({
     map: moonTexture,
     normalMap: normalTexture,
   })
 );
+//Marte
+const marteTexture = new THREE.TextureLoader().load('Mars.jpg');
+const Textura2=new THREE.TextureLoader().load('normal.jpg');
 
+const marte = new THREE.Mesh(
+  new THREE.SphereGeometry(7, 32, 32),
+  new THREE.MeshStandardMaterial({
+    map: marteTexture,
+    normalMap: normalTexture,
+  })
+);
+scene.add(marte);
 scene.add(moon);
 
-moon.position.z = 30;
+moon.position.z = 35;
 moon.position.setX(-10);
 
-jeff.position.z = -5;
-jeff.position.x = 2;
+marte.position.z =60;
+marte.position.setX(-10);
+
+zaul.position.z = -5;
+zaul.position.x = 2;
 
 // Scroll Animation
 
@@ -100,8 +114,12 @@ function moveCamera() {
   moon.rotation.y += 0.075;
   moon.rotation.z += 0.05;
 
-  jeff.rotation.y += 0.01;
-  jeff.rotation.z += 0.01;
+  zaul.rotation.y += 0.01;
+  zaul.rotation.z += 0.01;
+
+  marte.rotation.x += 0.05;
+  marte.rotation.y += 0.075;
+  marte.rotation.z += 0.05;
 
   camera.position.z = t * -0.01;
   camera.position.x = t * -0.0002;
@@ -121,6 +139,8 @@ function animate() {
   torus.rotation.z += 0.01;
 
   moon.rotation.x += 0.005;
+  
+  marte.rotation.x +=0.005;
 
   // controls.update();
 
